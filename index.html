@@ -23,9 +23,9 @@
                 <div id="navBar" class="collapse navbar-collapse">
                     <ul class="navbar-nav">
                         <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Domov</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Sluzby</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Cennik</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Kontakt</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#sluzby">Sluzby</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#cennik">Cennik</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#kontakt">Kontakt</a></li>
                     </ul>
                 </div>
             </div>
@@ -39,11 +39,11 @@
                     <div class="container">
                         <div class="d-flex justify-content-center align-items-center">
                             <div class="text-white">
-                                <h1 class="fw-normal">Aj Vam pomozem k vysnenemu domovu</h1>
+                                <h1 class="fw-normal">Aj Vam pomozeme k vysnenemu byvaniu</h1>
                                 <p class="fs-3 lh-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                                     Assumenda soluta rem ab reprehenderit facere eos, laudantium earum officia harum, facilis rerum ipsum error aperiam dolor nihil? 
                                     Tempore animi maxime ex.</p>
-                                <a class="btn btn-outline-light btn-lg m-2" role="button" href="#">Napiste mi</a>
+                                <a class="btn btn-light btn-lg m-2" role="button" href="#">Napiste nam</a>
                             </div>
                         </div>
                     </div>
@@ -52,7 +52,7 @@
         </div>
         
 
-        <div class="container px-4 ">
+        <div class="container px-4" id="sluzby">
             <div class="container">
                 <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
                     <h1 class="display-4 fw-normal">Sluzby</h1>
@@ -107,7 +107,7 @@
             </div>
         </div>
 
-        <div class="container py-3">
+        <div class="container py-3" id="cennik">
             <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
                 <h1 class="display-4 fw-normal">Cennik</h1>
                 <p class="lead lh-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
@@ -170,58 +170,68 @@
             </div>
         </div>        
 
-    <div class="container border-0">
-        <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
-            <h1 class="display-4 fw-normal">Kontakt</h1>
-            <p class="lead lh-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Assumenda soluta rem ab reprehenderit facere eos, laudantium earum officia harum, facilis rerum ipsum error aperiam dolor nihil? 
-                Tempore animi maxime ex.</p>
+        <div class="container border-0" id="kontakt">
+            <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+                <h1 class="display-4 fw-normal">Kontakt</h1>
+                <p class="lead lh-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Assumenda soluta rem ab reprehenderit facere eos, laudantium earum officia harum, facilis rerum ipsum error aperiam dolor nihil? 
+                    Tempore animi maxime ex.</p>
+            </div>
+        
+            <div class="row justify-content-center">
+                <form class="row g-3 col-md-9">
+                    <div class="col-md-3">
+                        <label for="validationDefault01" class="form-label">Meno</label>
+                        <input type="text" class="form-control" id="validationDefault01" required>
+                    </div>
+                    <div class="col-md-3">
+                        <label for="validationDefault02" class="form-label">Priezvisko</label>
+                        <input type="text" class="form-control" id="validationDefault02" required>
+                    </div>
+                    <div class="col-md-3">
+                        <label for="validationDefault03" class="form-label">E-mail</label>
+                        <input type="email" class="form-control" id="validationDefault03" required>
+                    </div>
+                    <div class="col-md-3">
+                        <label for="validationDefault04" class="form-label">Telefonne cislo</label>
+                        <input type="number" class="form-control" id="validationDefault04" required>
+                    </div>
+                    <div class="col-md-3">
+                        <label for="validationDefault05" class="form-label">Mesto</label>
+                        <input type="text" class="form-control" id="validationDefault05" required>
+                    </div>
+                    <div class="col-md-3">
+                        <label for="validationDefault05" class="form-label">Adresa</label>
+                        <input type="text" class="form-control" id="validationDefault06" required>
+                    </div>
+                    <div class="col-md-3">
+                        <label for="validationDefault06" class="form-label">PSC</label>
+                        <input type="number" class="form-control" id="validationDefault07" required>
+                    </div>
+                    <div class="col-md-3">
+                        <label for="validationDefault07" class="form-label">Stat</label>
+                        <select class="form-select" id="validationDefault05" required>
+                            <option selected disabled value="">Zvolit...</option>
+                            <option>Slovensko</option>
+                            <option>Cesko</option>
+                        </select>
+                    </div>
+                    <div class="col-12">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                            <label class="form-check-label" for="invalidCheck2">
+                                Suhlasim so spracovanim osobnych udajov
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <button class="btn btn-primary" type="submit">Odoslat</button>
+                    </div>
+                </form>
+            </div>
         </div>
-
-        <form class="row g-3">
-            <div class="col-md-4">
-              <label for="validationDefault01" class="form-label">First name</label>
-              <input type="text" class="form-control" id="validationDefault01" value="Mark" required>
-            </div>
-            <div class="col-md-4">
-              <label for="validationDefault02" class="form-label">Last name</label>
-              <input type="text" class="form-control" id="validationDefault02" value="Otto" required>
-            </div>
-            <div class="col-md-4">
-              <label for="validationDefaultUsername" class="form-label">Username</label>
-              <div class="input-group">
-                <span class="input-group-text" id="inputGroupPrepend2">@</span>
-                <input type="text" class="form-control" id="validationDefaultUsername" aria-describedby="inputGroupPrepend2" required>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <label for="validationDefault03" class="form-label">City</label>
-              <input type="text" class="form-control" id="validationDefault03" required>
-            </div>
-            <div class="col-md-3">
-              <label for="validationDefault04" class="form-label">State</label>
-              <select class="form-select" id="validationDefault04" required>
-                <option selected disabled value="">Choose...</option>
-                <option>...</option>
-              </select>
-            </div>
-            <div class="col-md-3">
-              <label for="validationDefault05" class="form-label">Zip</label>
-              <input type="text" class="form-control" id="validationDefault05" required>
-            </div>
-            <div class="col-12">
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
-                <label class="form-check-label" for="invalidCheck2">
-                  Agree to terms and conditions
-                </label>
-              </div>
-            </div>
-            <div class="col-12">
-              <button class="btn btn-primary" type="submit">Submit form</button>
-            </div>
-          </form>
-        </div>
+        
+        
 
     </main>
 
