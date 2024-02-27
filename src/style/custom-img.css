@@ -1,0 +1,11 @@
+.bg-image-container {
+    position: relative;
+    background-image: url('/src/images/drew-coffman-jUOaONoXJQk-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 700px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
